@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio | M.A.B.B</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+<!-----navbar------->
+        <header class = "header">
+            <a href = "#home" class ="logo">Port<b>Folio.</b></a>
+            <div class =  "fa fa-bars" id = "menu-icon"></div>
+
+            <nav class = "navbar">
+                <a href = "#home" class="active">Home</a>
+                <a href = "#about">About</a>
+                <a href = "#skill">Services</a>
+                <a href = "#contact">Contact</a>
+            </nav>
+        </header>
+
+<!--------home------>
+        <section class = "home" id = "home">
+            <div class="home-content">
+                <h3>A student with passion</h3>
+                <h2>Hello, it's me</h2>
+                <h1>Mark Angelo</h1>
+                <div class="home-sci">
+                    <a href = "https://www.facebook.com/profile.php?id=100008749963190"><i class="fa fa-facebook"></i></a>
+                    <a href = "https://www.instagram.com/itsmegelo09"><i class="fa fa-instagram"></i></a>
+                    <a href = "mailto:bulauan.angelo02@gmail.com"><i class="fa fa-envelope"></i></i></a>
+                </div>
+                <a href = "#about" class = "btn">More About Me</a>
+            </div>
+
+            <div class="home-img">
+                <img src = "hero-pic.png">
+            </div>
+        </section>
+
+<!-----about section design----->
+        <section class = "about" id = "about">
+            <div class="about-content">
+                <img src="img-aboutpng.png" alt="">
+            </div>
+
+            <div class="about-content">
+                <h4  class = "heading">About <b>Me</b></h4>
+                <h1>Mark Angelo B. Bulauan</h1>
+                <p>A 2nd year student at Cagayan State University - Aparri Campus, taking up a course in Bachelor of Science in Information Technology. A student currently shaping the future of an information technologist</p>
+
+                <h2>Skills</h2>
+                <div class="skills-bar">
+                    <div class="subject">Web Development</div>
+                    <div class="progress-bar">
+                        <div class="progress-line" value = "75%" style="max-width: 75%;"></div>
+                    </div>
+                </div>
+
+                <div class="skills-bar">
+                    <div class="subject">Database Programming</div>
+                    <div class="progress-bar">
+                        <div class="progress-line" value = "85%" style="max-width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="skills-bar">
+                    <div class="subject">Networking</div>
+                    <div class="progress-bar">
+                        <div class="progress-line" value = "60%" style="max-width: 60%;"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+<!-----skills----->
+        <section class = "skill" id = "skill">
+            <h4  class = "heading">Services <b>Offered</b></h4>
+            <div class="skill-content">
+                <div class="skill-box">
+                    <i class="fa fa-code"></i>
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li>Full-stack Development</li>
+                        <li>E-Commerce Development</li>
+                        <li>Customized Web App Development</li>
+                        <li>CMS Website Vevelopment</li>
+                        <li>Static Web Service</li>
+                    </ul>
+                </div>
+
+                <div class="skill-box">
+                    <i class="fa fa-database"></i>
+                    <h3>Database Programming</h3>
+                    <ul>
+                        <li>SQL Server Integration Services</li>
+                        <li>ASP.NET.</li>
+                        <li>Database Administration</li>
+                        <li>API Development</li>
+                        <li>Microsoft Access Programming</li>
+                    </ul>
+                </div>
+
+                <div class="skill-box">
+                    <i class="fa fa-server"></i>
+                    <h3>Networking</h3>
+                    <ul>
+                        <li>Internet and cloud connectivity</li>
+                        <li>Branch office and campus connectivity</li>
+                        <li>Private data center services</li>
+                        <li>Secure cloud-connectivity services</li>
+                        <li>Virtual network services</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+
+    <!-----contact----->
+    <section class = "contact" id = "contact">
+            <h4  class = "heading">Contact <b>Me!</b></h4>
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+
+                <div class="input-box">
+                    <input type="number" placeholder="Mobile Number" required>
+                    <input type="text" placeholder="Email Subject"required>
+                </div>
+
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <input type="submit" value ="Send Message" class="btn-submit">
+            </form>
+    </section>
+
+    <!-----footer----->
+    <footer class = "footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Mark Angelo | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-icon-top">
+            <a href="#home"><i class="fa fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <script src = "javascript.js"></script>
+    
+    </body>
+</html>
